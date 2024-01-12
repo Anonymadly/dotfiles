@@ -1,0 +1,34 @@
+2024/01/05-20:36:46.768 1d0e6 Reusing MANIFEST /home/alexis/.config/Cider/IndexedDB/http_localhost_9500.indexeddb.leveldb/MANIFEST-000001
+2024/01/05-20:36:46.769 1d0e6 Recovering log #471
+2024/01/05-20:36:46.784 1d0e6 Reusing old log /home/alexis/.config/Cider/IndexedDB/http_localhost_9500.indexeddb.leveldb/000471.log 
+2024/01/05-20:36:46.891 1d0f8 Level-0 table #491: started
+2024/01/05-20:36:46.900 1d0f8 Level-0 table #491: 517437 bytes OK
+2024/01/05-20:36:46.902 1d0f8 Delete type=0 #471
+2024/01/05-20:36:46.903 1d0e7 Manual compaction at level-0 from '\x00\x0e\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0e\x00\x00\x05' @ 170774 : 1
+2024/01/05-20:36:46.903 1d0e7 Compacting 1@0 + 4@1 files
+2024/01/05-20:36:46.931 1d0e7 Generated table #492@0: 4278 keys, 2127652 bytes
+2024/01/05-20:36:46.956 1d0e7 Generated table #493@0: 250 keys, 2110492 bytes
+2024/01/05-20:36:46.970 1d0e7 Generated table #494@0: 163 keys, 1272932 bytes
+2024/01/05-20:36:46.976 1d0e7 Generated table #495@0: 769 keys, 491097 bytes
+2024/01/05-20:36:46.976 1d0e7 Compacted 1@0 + 4@1 files => 6002173 bytes
+2024/01/05-20:36:46.978 1d0e7 compacted to: files[ 0 4 12 0 0 0 0 ]
+2024/01/05-20:36:46.978 1d0e7 Delete type=2 #491
+2024/01/05-20:36:46.979 1d0e7 Manual compaction at level-0 from '\x00\x0e\x00\x00\x05' @ 170774 : 1 .. '\x00\x0f\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/01/05-20:36:47.929 1d0e6 Compacting 1@1 + 7@2 files
+2024/01/05-20:36:48.011 1d0e6 Generated table #496@1: 1488 keys, 2119875 bytes
+2024/01/05-20:36:48.044 1d0e6 Generated table #497@1: 242 keys, 2111988 bytes
+2024/01/05-20:36:48.046 1d0e6 Generated table #498@1: 1 keys, 11675 bytes
+2024/01/05-20:36:48.046 1d0e6 Compacted 1@1 + 7@2 files => 4243538 bytes
+2024/01/05-20:36:48.047 1d0e6 compacted to: files[ 0 3 8 0 0 0 0 ]
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #476
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #482
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #486
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #485
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #492
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #479
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #480
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #483
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #478
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #481
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #461
+2024/01/05-20:36:48.048 1d0e6 Delete type=2 #477
