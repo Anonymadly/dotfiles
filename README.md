@@ -1,5 +1,5 @@
 # Dot Files
-⚠️ Please note that I use the Colemak keyboard layout. Any mapping configurations are not designed for QWERTY.\
+⚠️ Please note that I use the [Colemak](https://colemak.org/) keyboard layout. Any mapping configurations are not designed for QWERTY.\
 Also, install a [Nerd Font](https://www.nerdfonts.com/) for nicer symbols in the scripts :)
 
 ## `install.sh`
