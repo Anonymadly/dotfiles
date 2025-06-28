@@ -2,7 +2,7 @@
 
 set -e
 
-DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")/Dot Files" && pwd)"
 
 echo "🧹 Dotfiles Uninstall Script"
 echo "Detected dotfiles repo at: $DOTFILES_DIR"
@@ -23,16 +23,16 @@ shopt -s dotglob nullglob
 for item in "$DOTFILES_DIR"/*; do
   name="$(basename "$item")"
 
-  if [[ "$name" == .* ]] \
-    || [[ "$name" == "install.sh" ]] \
-    || [[ "$name" == "uninstall.sh" ]] \
-    || [[ "$name" == "Other Files" ]] \
-    || [[ "$name" == "LICENSE" ]] \
-    || [[ "$name" == "README.md" ]];
-  then
-    echo "⚠️ Skipping $name"
-    continue
-  fi
+  # if [[ "$name" == .* ]] \
+  #   || [[ "$name" == "install.sh" ]] \
+  #   || [[ "$name" == "uninstall.sh" ]] \
+  #   || [[ "$name" == "Other Files" ]] \
+  #   || [[ "$name" == "LICENSE" ]] \
+  #   || [[ "$name" == "README.md" ]];
+  # then
+  #   echo "⚠️ Skipping $name"
+  #   continue
+  # fi
 
   if [[ "$name" == config_* ]]; then
     config_name="${name#config_}"

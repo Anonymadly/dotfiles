@@ -2,7 +2,7 @@
 
 set -e
 
-DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "$0")/Dot Files" && pwd)"
 BACKUP_DIR="$HOME/.dotfiles-backup"
 
 echo "🔧 Starting dotfiles installation from $DOTFILES_DIR"
@@ -15,16 +15,16 @@ for item in "$DOTFILES_DIR"/*; do
   name="$(basename "$item")"
 
   # Skip hidden files/folders and git-related internals + any scripts + other types of configs
-  if [[ "$name" == .* ]] \
-    || [[ "$name" == "install.sh" ]] \
-    || [[ "$name" == "uninstall.sh" ]] \
-    || [[ "$name" == "Other Files" ]] \
-    || [[ "$name" == "LICENSE" ]] \
-    || [[ "$name" == "README.md" ]];
-  then
-    echo "⚠️ Skipping $name"
-    continue
-  fi
+  # if [[ "$name" == .* ]] \
+  #   || [[ "$name" == "install.sh" ]] \
+  #   || [[ "$name" == "uninstall.sh" ]] \
+  #   || [[ "$name" == "Other Files" ]] \
+  #   || [[ "$name" == "LICENSE" ]] \
+  #   || [[ "$name" == "README.md" ]];
+  # then
+  #   echo "⚠️ Skipping $name"
+  #   continue
+  # fi
 
   # Special case: config_<name> → ~/.config/<name>
   if [[ "$name" == config_* ]]; then
