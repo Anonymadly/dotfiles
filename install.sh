@@ -5,8 +5,8 @@ set -e
 DOTFILES_DIR="$(cd "$(dirname "$0")/Dot Files" && pwd)"
 BACKUP_DIR="$HOME/.dotfiles-backup"
 
-echo "🔧 Starting dotfiles installation from $DOTFILES_DIR"
-echo "📦 Backup directory: $BACKUP_DIR"
+echo -e "\033[0;32m\033[0m  Starting dotfiles installation from $DOTFILES_DIR"
+echo -e "\033[0;34m󱂷\033[0m Backup directory: $BACKUP_DIR"
 mkdir -p "$BACKUP_DIR"
 
 shopt -s dotglob nullglob
@@ -22,7 +22,7 @@ for item in "$DOTFILES_DIR"/*; do
   #   || [[ "$name" == "LICENSE" ]] \
   #   || [[ "$name" == "README.md" ]];
   # then
-  #   echo "⚠️ Skipping $name"
+  #   echo -e "\033[0;33m󰒭\033[0m Skipping $name"
   #   continue
   # fi
 
@@ -36,7 +36,7 @@ for item in "$DOTFILES_DIR"/*; do
 
   # Backup existing non-symlink targets
   if [[ -e "$target" && ! -L "$target" ]]; then
-    echo "📦 Backing up $target → $BACKUP_DIR"
+    echo -e "\033[0;33m󰸧\033[0m Backing up $target → $BACKUP_DIR"
     mkdir -p "$(dirname "$BACKUP_DIR/$name")"
     mv "$target" "$BACKUP_DIR/"
   fi
@@ -46,16 +46,16 @@ for item in "$DOTFILES_DIR"/*; do
     rm "$target"
   fi
 
-  echo "🔗 Linking $target → $item"
+  echo -e "\033[0;32m\033[0m Linking $target → $item"
   mkdir -p "$(dirname "$target")"
   ln -s "$item" "$target"
 done
 
 # Remove backup dir if it's empty
 if [ -d "$BACKUP_DIR" ] && [ -z "$(ls -A "$BACKUP_DIR")" ]; then
-  echo "🧹 No backups were needed. Removing empty backup directory."
+  echo -e "\033[0;34m󱂨\033[0m No backups were needed. Removing empty backup directory."
   rmdir "$BACKUP_DIR"
 fi
 
-echo "✅ All dotfiles linked successfully."
+echo -e "\033[0;32m\033[0m All dotfiles linked successfully."
 
