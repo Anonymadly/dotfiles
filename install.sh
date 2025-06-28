@@ -18,7 +18,7 @@ for item in "$DOTFILES_DIR"/*; do
   if [[ "$name" == .* ]] \
     || [[ "$name" == "install.sh" ]] \
     || [[ "$name" == "uninstall.sh" ]] \
-    || [[ "$name" == "Other Config Files" ]] \
+    || [[ "$name" == "Other Files" ]] \
     || [[ "$name" == "LICENSE" ]] \
     || [[ "$name" == "README.md" ]];
   then
