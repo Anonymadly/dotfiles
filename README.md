@@ -1,9 +1,9 @@
-# dotfiles
+# Dot Files
 
 ⚠️ Please note that I use the Colemak keyboard layout. Any mapping configurations are not designed for QWERTY.
 
 ## `install.sh`
-The script wil symlink all of the dotfiles to your `$HOME`.\
+The script wil symlink all of the dotfiles in `Dot Files` to your `$HOME`.\
 Any existing dotfiles will not be overwritten, they will be moved to `$HOME/dotfiles-backup`.
 
 ### Note:
