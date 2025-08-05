@@ -1,0 +1,7 @@
+# Pyenv
+eval "$(pyenv init -)"
+
+# Aliases & Colors
+export HOMEBREW_NO_AUTO_UPDATE=1
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+alias ls="ls -AG"
