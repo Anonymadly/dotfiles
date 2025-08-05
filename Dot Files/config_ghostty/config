@@ -18,6 +18,10 @@ auto-update-channel = stable
 macos-icon = paper
 background-opacity = 0.96
 confirm-close-surface = false
+maximize = true
+# Because maximize seems to not be working
+window-height=510
+window-width=1640
 
 # Adapted from NvChad Yoru.lua theme
 # App colors
