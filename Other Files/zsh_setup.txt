@@ -1,0 +1,3 @@
+To use Zsh configs, install :
+[Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k)

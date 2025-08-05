@@ -31,4 +31,4 @@ The script handles dotfiles and `.config` configurations differently. For exampl
 3. Choose between 1 and 2 for each dotfile.
 
 ## `Other Files`
-This is used to store files that will be skipped by both scripts. Read its README for more information.
+This is used to store files that will be skipped by both scripts. Read its README for more information. This includes dependencies that must be installed separately.
