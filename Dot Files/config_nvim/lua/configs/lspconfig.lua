@@ -1,8 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local lspconfig = require("lspconfig")
-
-lspconfig.pyright.setup({
+vim.lsp.config('pyright', {
   settings = {
     python = {
       analysis = {
@@ -63,7 +61,7 @@ vim.lsp.config('lua_ls', {
   }
 })
 
-local servers = { "html", "cssls" , "pyright", "lua_ls", "bashls", "jsonls" }
+local servers = { "html", "cssls" , "pyright", "lua_ls", "bashls", "jsonls", "clangd" }
 vim.lsp.enable(servers)
 
 -- read :h vim.lsp.config for changing options of lsp servers 
