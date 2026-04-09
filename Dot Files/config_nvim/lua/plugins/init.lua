@@ -28,7 +28,38 @@ return {
       vim.keymap.set("n", "<leader>sw", "<cmd> SudaWrite <cr>", { desc = "SudaWrite" })
       vim.keymap.set("n", "<leader>sr", "<cmd> SudaRead <cr>", { desc = "SudaRead" })
     end
-  }
+  },
+
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      registries = {
+        "github:mason-org/mason-registry",
+        "github:Crashdummyy/mason-registry",
+      },
+    },
+  },
+
+  {
+    "seblyng/roslyn.nvim",
+    ft = "cs",
+    ---@module 'roslyn.config'
+    ---@type RoslynNvimConfig
+    opts = {},
+    config = function()
+      vim.lsp.config("roslyn", {
+        settings = {
+          ["csharp|inlay_hints"] = {
+            csharp_enable_inlay_hints_for_implicit_object_creation = true,
+            csharp_enable_inlay_hints_for_implicit_variable_types = true,
+          },
+          ["csharp|code_lens"] = {
+            dotnet_enable_references_code_lens = true,
+          },
+        },
+      })
+    end
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },

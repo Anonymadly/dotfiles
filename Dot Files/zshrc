@@ -129,3 +129,5 @@ alias fetch="fastfetch"
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 source /Users/alexis/.pymobiledevice3.zsh
+
+. "$HOME/.local/bin/env"
