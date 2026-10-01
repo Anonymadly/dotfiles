@@ -135,7 +135,7 @@ if [[ -f "$HOME/.local/bin/env" ]]; then
     . "$HOME/.local/bin/env"
 fi
 
-scp-attu-alexisvh() {
-  local out="${2:-$HOME/Downloads/}"
-  scp -r "attu-alexisvh:$1" "$out"
-}
+if [[ -f "$HOME/.attu_config.zsh" ]]; then
+    source "$HOME/.attu_config.zsh"
+fi
+
