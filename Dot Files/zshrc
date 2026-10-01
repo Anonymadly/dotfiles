@@ -131,3 +131,8 @@ alias fetch="fastfetch"
 
 
 . "$HOME/.local/bin/env"
+
+scp-attu-alexisvh() {
+  local out="${2:-$HOME/Downloads/}"
+  scp -r "attu-alexisvh:$1" "$out"
+}
