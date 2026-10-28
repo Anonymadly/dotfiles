@@ -12,6 +12,12 @@ vim.lsp.config('pyright', {
   }
 })
 
+vim.lsp.config("asm-lsp", {
+  filetypes = {"asm", "vmasm"},
+  cmd = {"asm-lsp"},
+  -- root_markers = {".asm-lsp.toml", ".git"}
+})
+
 vim.lsp.config('lua_ls', {
   on_init = function(client)
     if client.workspace_folders then
@@ -61,7 +67,7 @@ vim.lsp.config('lua_ls', {
   }
 })
 
-local servers = { "html", "cssls" , "pyright", "lua_ls", "bashls", "jsonls", "clangd" }
+local servers = { "html", "cssls" , "pyright", "lua_ls", "bashls", "jsonls", "clangd", "asm-lsp" }
 vim.lsp.enable(servers)
 
 -- read :h vim.lsp.config for changing options of lsp servers 

@@ -140,3 +140,4 @@ if [[ -f "$HOME/.attu_config.zsh" ]]; then
 fi
 
 . "$HOME/.cargo/env"
+alias gcc351="gcc -g -Wall -std=c18"
